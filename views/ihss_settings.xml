@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+	<data>
+
+<record id="hr_ihss_settings_form_view" model="ir.ui.view">
+<field name="name">hr.ihss.settings.form.view</field>
+<field name="model">hr.ihss.settings</field>         	      	
+<field name="arch" type="xml">
+<form string="IHSS">
+    <header>
+        <button name="set_ihss" type="object" string="Establecer IHSS" class="oe_highlight" states="draft"/>
+        <button name="set_to_draft" type="object" string="Establecer Borrador" class="oe_highlight" states="validated"/>
+        <field name="state" widget="statusbar" nolabel="1"/>
+    </header>
+	<sheet>
+		<h1>
+			<field name="code_ihss" placeholder="Codigo" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+		</h1>
+		<group colspan="4">
+			<group cols="2">
+                <field name="name" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+				<field name="ihss_percentage" required="1" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+                <field name="pay_periodicity" required="1" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+                <field name="ihss_fee_max" readonly="1"/>
+                <field name="ihss_fee_min" readonly="1"/>
+			</group>
+		        				
+			<group cols="2">
+				<field name="limit_max_ihss" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+                <field name="fee_pay_max_ihss" readonly="1"/>
+                <field name="limit_min_ihss" required="1" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+                <field name="fee_pay_min_ihss" readonly="1"/>
+			</group>        			
+        </group>
+                        
+        <!--<group colspan="4">
+            <group cols="2">
+                <p><strong>Seleccione como desea aplicar el calculo del IHSS</strong></p>
+                <field name="ihss_apply" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+            </group>
+                                
+            <group cols="2">
+            </group>                    
+        </group>-->
+	</sheet>
+</form>
+</field>
+</record>
+
+<record id="hr_ihss_settings_tree_view" model="ir.ui.view">
+	<field name="name">hr.ihss.settings.tree.view</field>
+	<field name="model">hr.ihss.settings</field>         	      	
+	<field name="arch" type="xml">
+		<tree string="Detalle IHSS">
+			<field name="code_ihss"/>
+            <field name="name"/>
+			<field name="ihss_percentage"/>        				
+		</tree>
+	
+	</field>
+</record>
+        
+<record model="ir.actions.act_window" id="action_hr_ihss_settings">
+    <field name="name">IHSS Parámetros</field>
+    <field name="res_model">hr.ihss.settings</field>
+    <field name="view_type">form</field>
+    <field name="view_model">tree,form</field>
+    <field name="help" type="html">
+        <p class="oe_view_nocontent_create">Parámetros IHSS</p>
+    </field>
+</record>
+          
+<menuitem string="IHSS" id="hr_menu_config_ihss" parent="hr_payroll.menu_hr_payroll_configuration" action="action_hr_ihss_settings" sequence="50"/>
+           
+	</data>
+</odoo>

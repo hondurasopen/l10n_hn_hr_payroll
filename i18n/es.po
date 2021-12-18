@@ -1,0 +1,394 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_hn_hr_payroll
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-26 00:52+0000\n"
+"PO-Revision-Date: 2019-11-25 20:04-0500\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 1.8.11\n"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_payment_amount
+msgid "Amount Payment"
+msgstr "Monto pagado"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,help:l10n_hn_hr_payroll.field_isr_hr_payroll_amount_total
+msgid "Base exenta del ISR"
+msgstr "Base exenta del ISR"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_classification_id
+msgid "Classification"
+msgstr "Clasificación"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.actions.act_window,name:l10n_hn_hr_payroll.classification_deduction_contribution_action
+#: model:ir.ui.menu,name:l10n_hn_hr_payroll.classification_deduction_contribution_menu
+msgid "Classification of Deductions and Contributions"
+msgstr "Clasificación de Deducciones y Contribuciones"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_classification_deduction_contribution_code
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic_company_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_company_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_company_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll_company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic_contract_id
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.actions.act_window,name:l10n_hn_hr_payroll.hr_payroll_historic_action
+#: model:ir.ui.menu,name:l10n_hn_hr_payroll.hr_payroll_historic_menu
+msgid "Contract Historic"
+msgstr "Histórico de contratos"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_contrib_deduct_ids
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.contribution_deduction_form
+msgid "Contracts"
+msgstr "Contratos"
+
+#. module: l10n_hn_hr_payroll
+#: selection:contribution.deduction,type:0
+msgid "Contribution"
+msgstr "Contribución"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.actions.act_window,name:l10n_hn_hr_payroll.contribution_deduction_action
+#: model:ir.ui.menu,name:l10n_hn_hr_payroll.contribution_deduction_menu
+msgid "Contributions and Deductions"
+msgstr "Contribuciones y Deducciones"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_contract_contrib_deduct_ids
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.hr_contrat_form_inherit
+msgid "Contributions and deductions"
+msgstr "Contribuciones y Deducciones"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_classification_deduction_contribution_create_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_create_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic_create_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_create_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_create_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_classification_deduction_contribution_create_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_create_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic_create_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_create_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_create_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_currency_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic_date_from
+msgid "Date From"
+msgstr "Desde"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic_date_to
+msgid "Date to"
+msgstr "Hasta"
+
+#. module: l10n_hn_hr_payroll
+#: selection:contribution.deduction,type:0
+msgid "Deduction"
+msgstr "Deducción"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_classification_deduction_contribution_display_name
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_display_name
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic_display_name
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_display_name
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_display_name
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll_display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: l10n_hn_hr_payroll
+#: selection:contribution.deduction,state:0
+msgid "Done"
+msgstr "Finalizado"
+
+#. module: l10n_hn_hr_payroll
+#: selection:contribution.deduction,state:0
+msgid "Draft"
+msgstr "Nuevo"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic_employee_id
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_employee_amount
+msgid "Employee Amount"
+msgstr "Total trabajador"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contrato de empleado"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_employee_percent
+msgid "Employee Percent"
+msgstr "% Trabajador"
+
+#. module: l10n_hn_hr_payroll
+#: selection:contribution.deduction,periocity:0
+msgid "Finite"
+msgstr "Finita"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_contract_historic_ids
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.hr_contrat_form_inherit
+msgid "Historic"
+msgstr "Histórico"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_contract_historic_count
+msgid "Historic Count"
+msgstr "Cantidad"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_classification_deduction_contribution_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll_id
+msgid "ID"
+msgstr "ID (identificación)"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.actions.act_window,name:l10n_hn_hr_payroll.ihss_hr_payroll_action
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic_ihss_line_id
+#: model:ir.ui.menu,name:l10n_hn_hr_payroll.ihss_hr_payroll_menu
+msgid "IHSS"
+msgstr "IHSS"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.actions.act_window,name:l10n_hn_hr_payroll.isr_hr_payroll_action
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic_isr_line_id
+#: model:ir.ui.menu,name:l10n_hn_hr_payroll.isr_hr_payroll_menu
+msgid "ISR"
+msgstr "ISR"
+
+#. module: l10n_hn_hr_payroll
+#: selection:contribution.deduction,state:0
+msgid "In progress"
+msgstr "En progreso"
+
+#. module: l10n_hn_hr_payroll
+#: selection:contribution.deduction,periocity:0
+msgid "Infinite"
+msgstr "Infinita"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_classification_deduction_contribution___last_update
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction___last_update
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic___last_update
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll___last_update
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll___last_update
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_classification_deduction_contribution_write_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_write_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic_write_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_write_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_write_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_classification_deduction_contribution_write_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_write_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic_write_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_write_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_write_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll_write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_classification_deduction_contribution_name
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_name
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic_name
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic_note
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.hr_payroll_historic_form
+msgid "Note"
+msgstr "Nota"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic_number_week
+msgid "Number week"
+msgstr "Número de semana"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic_partner_id
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_partner_amount
+msgid "Partner Amount"
+msgstr "Total empresa"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_partner_percent
+msgid "Partner Percent"
+msgstr "% Empresa"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic_payslip_id
+msgid "Payslip"
+msgstr "Planilla"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll_percent
+msgid "Percent"
+msgstr "%"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_periocity
+msgid "Periocity"
+msgstr "Periocidad"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_quota_amount
+msgid "Quota Amount"
+msgstr "Cuota a pagar"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.actions.act_window,name:l10n_hn_hr_payroll.rap_hr_payroll_action
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic_rap_line_id
+#: model:ir.ui.menu,name:l10n_hn_hr_payroll.rap_hr_payroll_menu
+msgid "RAP"
+msgstr "RAP"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_register_id
+msgid "Register"
+msgstr "Registro"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_payment_remaining
+msgid "Remaining Payment"
+msgstr "Monto por pagar"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payroll_historic_report_date
+msgid "Report date"
+msgstr "Fecha de reporte"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_roof
+msgid "Roof"
+msgstr "Techo"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_show_in_contract
+msgid "Show in contract"
+msgstr "Mostrar en contrato"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_state
+msgid "State"
+msgstr "Estado"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/hr_payroll_historic.py:43
+#, python-format
+msgid "The date from can not be major that date_to."
+msgstr "La fecha de inicio del período no puede ser mayor que la fecha de fin."
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_total_amount
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_amount_total
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_amount_total
+msgid "Total Amount"
+msgstr "Monto inicial"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_year
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_year
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll_year
+msgid "Year"
+msgstr "Año"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_classification_deduction_contribution
+msgid "classification.deduction.contribution"
+msgstr "classification.deduction.contribution"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_contribution_deduction
+msgid "contribution.deduction"
+msgstr "contribution.deduction"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_hr_payroll_historic
+msgid "hr.payroll.historic"
+msgstr "hr.payroll.historic"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_ihss_hr_payroll
+msgid "ihss.hr.payroll"
+msgstr "ihss.hr.payroll"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_isr_hr_payroll
+msgid "isr.hr.payroll"
+msgstr "isr.hr.payroll"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_rap_hr_payroll
+msgid "rap.hr.payroll"
+msgstr "rap.hr.payroll"

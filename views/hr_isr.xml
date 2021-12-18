@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<data>
+
+<record id="hr_isr_form_view" model="ir.ui.view">
+<field name="name">hr.isr.form.view</field>
+<field name="model">hr.isr</field>         	      	
+<field name="arch" type="xml">
+<form string="RAP">
+<header>
+	<button name="set_isr" type="object" string="Establecer ISR" class="oe_highlight" states="draft"/>
+    <button name="set_to_draft" type="object" string="Establecer Borrador" class="oe_highlight" states="validated"/>
+	<field name="state" widget="statusbar" nolabel="1"/>
+</header>
+<sheet>
+	<h1>
+		<field name="name" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+	</h1>
+	<group colspan="4">
+		<group cols="2">
+			<field name="exempt_salary" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+		</group>			
+		<group cols="2">
+         	<field name="medical_expense" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+         	<field name="amount_rap" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+         	<field name="amount_ivm" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+		</group>        			
+    </group>
+    <notebook>
+    <page string="Tabla Progresiva">
+		<field name="isr_range_ids">
+			<tree editable="button">
+				<field name="amount_from"/>
+				<field name="amount_to"/>
+				<field name="rate"/>
+			</tree>
+		</field>
+	</page>
+    </notebook>
+</sheet>
+</form>
+</field>
+</record>
+
+<record id="hr_isr_tree_view" model="ir.ui.view">
+<field name="name">hr.isr.tree.view</field>
+<field name="model">hr.isr</field>         	      	
+<field name="arch" type="xml">
+	<tree string="Detalle RAP">
+		<field name="name"/>
+        <field name="medical_expense"/>
+        <field name="state"/>        				
+	</tree>	
+</field>
+</record>
+        
+<record model="ir.actions.act_window" id="action_hr_isr">
+<field name="name">Impuestro Sobre Renta</field>
+<field name="res_model">hr.isr</field>
+<field name="view_type">form</field>
+<field name="view_model">tree,form</field>
+<field name="help" type="html">
+    <p class="oe_view_nocontent_create">Crear Deduccion de ISR</p>
+</field>
+</record>
+  
+<menuitem string="Impuesto Sobre Renta" id="hr_menu_isr_settings" parent="hr_payroll.menu_hr_payroll_configuration" action="action_hr_isr" sequence="55"/>
+           
+</data>
+</odoo>

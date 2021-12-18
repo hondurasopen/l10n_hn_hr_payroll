@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<data noupdate="1">
+    <record id="resource_calendar_std_48" model="resource.calendar">
+        <field name="name">48 Horas/Semana</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="attendance_ids"
+            eval="[
+                (0, 0, {'name': 'Lunes por la Mañana', 'dayofweek': '0', 'hour_from': 8, 'hour_to': 12}),
+                (0, 0, {'name': 'Lunes por la Tarde', 'dayofweek': '0', 'hour_from': 13, 'hour_to': 17}),
+                (0, 0, {'name': 'Martes por la Mañana', 'dayofweek': '1', 'hour_from': 8, 'hour_to': 12}),
+                (0, 0, {'name': 'Martes por la Tarde', 'dayofweek': '1', 'hour_from': 13, 'hour_to': 17}),
+                (0, 0, {'name': 'Miércoles por la Mañana', 'dayofweek': '2', 'hour_from': 8, 'hour_to': 12}),
+                (0, 0, {'name': 'Miércoles por la Tarde', 'dayofweek': '2', 'hour_from': 13, 'hour_to': 17}),
+                (0, 0, {'name': 'Jueves por la Mañana', 'dayofweek': '3', 'hour_from': 8, 'hour_to': 12}),
+                (0, 0, {'name': 'Jueves por la Tarde', 'dayofweek': '3', 'hour_from': 13, 'hour_to': 17}),
+                (0, 0, {'name': 'Viernes por la Mañana', 'dayofweek': '4', 'hour_from': 8, 'hour_to': 12}),
+                (0, 0, {'name': 'Viernes por la Tarde', 'dayofweek': '4', 'hour_from': 13, 'hour_to': 17}),
+                (0, 0, {'name': 'Sábado por la Mañana', 'dayofweek': '5', 'hour_from': 8, 'hour_to': 12}),
+                (0, 0, {'name': 'Sábado por la Tarde', 'dayofweek': '5', 'hour_from': 13, 'hour_to': 17})
+            ]"
+        />
+    </record>
+
+</data>
+</odoo>

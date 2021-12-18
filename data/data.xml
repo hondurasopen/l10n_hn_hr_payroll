@@ -1,0 +1,8 @@
+<odoo>
+    <data noupdate="0">
+        <record id="wage_decimal_data" model="decimal.precision">  
+            <field name="name">Wage</field>  
+            <field name="digits">2</field>  
+        </record> 
+    </data>
+</odoo>

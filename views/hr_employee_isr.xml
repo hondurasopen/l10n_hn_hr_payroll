@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<data>
+
+<record id="hr_isr_employee_form_view" model="ir.ui.view">
+<field name="name">hr.isr.employee.form.view</field>
+<field name="model">hr.isr.employee</field>         	      	
+<field name="arch" type="xml">
+<form string="RAP">
+<header>
+	<button name="get_employees" type="object" string="Obtener Empleados" class="oe_highlight" states="draft"/>
+    <button name="calculate_isr" type="object" string="Calcular ISR" class="oe_highlight" states="draft"/>
+    <button name="set_isr_contract" type="object" string="Establecer ISR" class="oe_highlight" states="draft"/>
+    <button name="return_to_draft" type="object" string="Volver a Borrador" class="oe_highlight" states="validated"/>
+	<field name="state" widget="statusbar" nolabel="1"/>
+</header>
+<sheet>
+	<group colspan="4">
+		<group cols="2">
+			<field name="start_date" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+			<field name="isr_id" attrs="{'readonly': [('state','!=', 'draft')]}" options="{'no_create': True}"/>
+			<field name="exempt_salary" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+		</group>			
+		<group cols="2">
+			<field name="end_date" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+         	<field name="department_id" attrs="{'readonly': [('state','!=', 'draft')]}" options="{'no_create': True}"/>
+         	<field name="name" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+		</group>        			
+    </group>
+    <separator string="Periodicidad de deducción"  style="color:#009C96;"/>
+    <group>
+    	<group>
+			<field name="pay_periodicity" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+			
+    	</group>
+    	<group>
+    		<field name="pay_number" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+
+    	</group>
+    </group>
+    <group>
+    	<p><strong>Pago mensual: </strong>el número de cuotas no debe de ser superior a 12. </p>
+    	<p><strong>Pago quincenal: </strong>el número de cuotas no debe de ser superior a 24.</p>
+    </group>
+    <notebook>
+    <page string="Empleados">
+		<field name="employee_ids" attrs="{'readonly': [('state','!=', 'draft')]}">
+			<tree editable="button" decoration-success="is_ok == True" decoration-info="is_ok == False">
+				<field name="employee_id" options="{'no_create': True}"/>
+				<field name="total_incomes"/>
+				<field name="medical_expense"/>
+				<field name="amount_rap"/>
+				<field name="amount_ivm"/>
+				<field name="amount_membership"/>
+				<field name="other_expenses"/>
+				<field name="total_base" readonly="1"/>
+				<field name="total_tax" readonly="1"/>
+				<field name="isr_fee" readonly="1"/>
+				<field name="is_ok" invisible="1"/>
+			</tree>
+		</field>
+	</page>
+    </notebook>
+</sheet>
+</form>
+</field>
+</record>
+
+<record id="hr_isr_employee_tree_view" model="ir.ui.view">
+<field name="name">hr.isr.employee.tree.view</field>
+<field name="model">hr.isr.employee</field>         	      	
+<field name="arch" type="xml">
+	<tree string="Detalle RAP">
+		<field name="name"/>
+        <field name="state"/>        				
+	</tree>	
+</field>
+</record>
+        
+<record model="ir.actions.act_window" id="action_hr_isr_employee">
+<field name="name">Aplicar Impuestro Sobre Renta</field>
+<field name="res_model">hr.isr.employee</field>
+<field name="view_type">form</field>
+<field name="view_model">tree,form</field>
+<field name="help" type="html">
+    <p class="oe_view_nocontent_create">Establecer ISR</p>
+</field>
+</record>
+  
+<menuitem string="Impuesto Sobre Renta" name="Deducción Marco Legal" id="menu_hr_isr_employee_settings" parent="hr_payroll.menu_hr_payroll_root" 
+	 sequence="55"/>
+
+<menuitem string="Establecer ISR" id="menu_hr_isr_employee_action" parent="menu_hr_isr_employee_settings" 
+	action="action_hr_isr_employee" sequence="10"/>
+           
+</data>
+</odoo>

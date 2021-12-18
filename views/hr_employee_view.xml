@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+<data>
+<record id="hr_employee_form_view_inh" model="ir.ui.view">
+<field name="name">hr.employee.form.view.inh</field>
+<field name="model">hr.employee</field> 
+<field name="inherit_id" ref="hr.view_employee_form"/>       	
+<field name="arch" type="xml">
+	<field name="user_id" position="after">
+		<div>
+			<label for="code_employee"></label>
+			<strong><field name="code_employee" required="0" readonly="1"/></strong>
+		</div>
+		<div>
+		<button name="action_button_confirm" string="Create Code" type="object" icon='fa-edit' groups="base.group_user" 
+				confirm="Do you sure to create code employee??" attrs="{'invisible':[('code_employee','!=',False)]}" class="oe_highlight"/>
+		</div>
+	</field>
+
+	<field name="identification_id" position="attributes">
+		<attribute name="required">True</attribute>
+	</field>
+
+	<field name="address_home_id" position="attributes">
+		<attribute name="invisible">1</attribute>
+	</field>
+
+</field>
+</record>
+	
+<record id="hr_employee_kanvan_view_inh" model="ir.ui.view">
+<field name="name">hr.employee.kanvan.view.inh</field>
+<field name="model">hr.employee</field> 
+<field name="inherit_id" ref="hr.hr_kanban_view_employees"/>       	
+<field name="arch" type="xml">
+		<xpath expr="//ul" position="inside">
+			<li t-if="record.identification_id.raw_value"><i class="fa fa-info"/> <field name="identification_id"/></li>
+			<li t-if="record.code_employee.raw_value"><i class="fa fa-pencil"/><strong><field name="code_employee"/></strong></li>
+		</xpath>
+</field>
+</record>
+
+<record id="hr_employee_search_view_inh" model="ir.ui.view">
+<field name="name">hr.employee.search.view.inh</field>
+<field name="model">hr.employee</field> 
+<field name="inherit_id" ref="hr.view_employee_filter"/>       	
+<field name="arch" type="xml">
+	<field name="job_id" position="after">
+		<field name="code_employee"/>
+	</field>
+</field>
+</record>
+
+<record id="hr_employee_tree_view_inh" model="ir.ui.view">
+<field name="name">hr.employee.tree.view.inh</field>
+<field name="model">hr.employee</field> 
+<field name="inherit_id" ref="hr.view_employee_tree"/>       	
+<field name="arch" type="xml">
+	<field name="name" position="after">
+		<field name="code_employee"/>
+	</field>
+</field>
+</record>
+
+</data>
+</odoo>

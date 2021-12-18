@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<odoo>  
+    <data noupdate="1">  
+        <record id="seq_to_code_employee" model="ir.sequence">  
+        <field name="name">Sequence to Code Employee</field>  
+        <field name="code">seq.code.employee</field>  
+        <field name="prefix">HIS-</field>  
+        <field name="padding">4</field>  
+        <field eval="1" name="number_increment"/>  
+        </record>  
+    </data>
+
+    <data noupdate="1">  
+        <record id="seq_to_liquidations" model="ir.sequence">  
+        <field name="name">Sequence to Liquidations</field>  
+        <field name="code">seq.code.liquidations</field>  
+        <field name="prefix">LIQ-</field>  
+        <field name="padding">4</field>  
+        <field eval="1" name="number_increment"/>  
+        </record>  
+    </data>  
+</odoo>  

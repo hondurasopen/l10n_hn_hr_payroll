@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+<record id="hr_gross_wage_historical_view_tree" model="ir.ui.view">
+<field name="name">hr.gross.wage.historical.tree.view</field>
+<field name="model">hr.gross.wage.historical</field>                     
+<field name="arch" type="xml">
+     <tree string="Historial Salarios" delete="0" create="0" edit="0">
+        <field name="month" />
+        <field name="payroll_id" />
+        <field name="gross_salary"  sum="Total"/>
+        <field name="payment_date"/>
+     </tree>                
+</field>
+</record>
+
+
+<record id="hr_historical_contract_view_tree" model="ir.ui.view">
+<field name="name">hr.historical.contract.tree.view</field>
+<field name="model">hr.historical.contract</field>                     
+<field name="arch" type="xml">
+ <tree string="Historial deducciones" delete="0" create="0" edit="0">
+    <field name="name" />
+    <field name="concept_type" />
+    <field name="amount_fee"  sum="Total"/>
+    <field name="number_fee"/>
+    <field name="payment_date" />
+ </tree>                
+</field>
+</record>
+
+<record model="ir.actions.act_window" id="action_hr_historical_contract">
+<field name="name">Historial</field>
+<field name="res_model">hr.historical.contract</field>
+<field name="view_type">form</field>
+<field name="view_mode">tree,form</field>
+<field name="domain"> [('contract_id', '=', active_id)]</field>
+</record>
+
+
+<record id="hr_contrat_form_inherit" model="ir.ui.view">
+<field name="name">hr.contrat.form.inherit</field>
+<field name="model">hr.contract</field>
+<field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+<field name="arch" type="xml">
+    <xpath expr="//div[@name='title']" position="before"> 
+    <div class="oe_button_box" name="button_box">
+        <button class="oe_stat_button"
+        icon="fa-bars"
+        type="action" name="%(action_hr_historical_contract)d"
+        string="Historial Deducciones">
+        </button>
+    </div>
+    </xpath>
+    <notebook position="inside">
+    <page string="Beneficios y deducciones">
+            <field name="allowences_ids"/>
+    </page>
+    <page string="Salarios brutos">
+            <field name="historical_gross_wage_ids"/>
+    </page>
+    <page string="IHSS">
+        <group>
+            <group>
+                <field name="ihss_fee" force_save="1" readonly="1"/>
+                <field name="accumulated_amount_ihss" invisible="1"/>
+            </group>
+            <group>
+                <field name="ihss_id" options="{'no_create': True}" domain="[('state', '=','validated')]"/>
+                <field name="ihss_manual"/>
+                <field name="amount_ihss_manual" attrs="{'invisible': [('ihss_manual', '=', False)]}"/>
+            </group>
+        </group>
+    </page>
+    <page string="RAP">
+        <group>
+            <group>
+                <field name="rap_fee" force_save="1" readonly="1"/>
+            </group>
+            <group>
+                 <field name="rap_id" options="{'no_create': True}" domain="[('state', '=','validated')]"/>
+                <field name="rap_manual"/>
+                <field name="amount_rap_manual" attrs="{'invisible': [('rap_manual', '=', False)]}"/>
+            </group>
+        </group>
+    </page>
+    <page string="Impuesto Sobre Renta">
+         <group>
+            <group>
+                <field name="isr_fee" force_save="1" readonly="1"/>
+                <field name="isr_residual" force_save="1" readonly="1"/>
+            </group>
+            <group>
+                <field name="isr_id" options="{'no_create': True}" domain="[('state', '=','validated')]" readonly="1"/>
+            </group>
+        </group>
+        <separator string="Otros Gastos deducibles de Impuesto Sobre Renta" style="color:#009C96;"/>
+        <group>
+            <group>
+                <field name="amount_membership" readonly="1"/>
+            </group>
+            <group>
+                <field name="amount_membership" readonly="1"/>
+            </group>
+        </group>
+        <field name="isr_ids" readonly="1">
+            <tree decoration-success="actived == True">
+                 <field name="start_date"/>
+                 <field name="end_date"/>
+                 <field name="pay_periodicity"/>
+                 <field name="total_tax"/>
+                 <field name="pay_number"/>
+                 <field name="isr_fee"/>
+                 <field name="actived"/>
+            </tree>
+        </field>
+    </page>
+    </notebook>
+    </field>
+    </record>
+
+    <record id="hr_contract_advantage_template_view_form" model="ir.ui.view">
+        <field name="name">hr.contract.advantage.template.form</field>
+        <field name="model">hr.contract.advantage.template</field>
+        <field name="inherit_id" ref="hr_payroll.hr_contract_advantage_template_view_form"/>
+        <field name="arch" type="xml">
+            <data>
+                <xpath expr="//group[1]" position="attributes">
+                    <attribute name="colspan">4</attribute>
+                </xpath>
+                <xpath expr="//field[@name='code']" position="attributes">
+                    <attribute name="colspan">2</attribute>
+                </xpath>
+            </data>
+        </field>
+    </record>
+</odoo>

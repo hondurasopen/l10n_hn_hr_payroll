@@ -1,0 +1,1155 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_hn_hr_payroll
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-16 14:41+0000\n"
+"PO-Revision-Date: 2020-03-16 14:41+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:132
+#, python-format
+msgid " Day(s)"
+msgstr " Dias(s)"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:132
+#, python-format
+msgid " Month(s)"
+msgstr " Mes(es)"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:132
+#, python-format
+msgid " Year(s)"
+msgstr " Año(s)"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_employee_percent
+msgid "% Employee"
+msgstr "% Empleado"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_partner_percent
+msgid "% Partner"
+msgstr "% Partner"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:36
+#, python-format
+msgid "50% ADVANCE NOTICE ------->"
+msgstr "PREAVISO 50%------->"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.hr_contrat_form_inherit
+msgid "<span>/ dia</span>"
+msgstr "<span>/ dia</span>"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.hr_contrat_form_inherit
+msgid "<span>/ hora</span>"
+msgstr "<span>/ hora</span>"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.hr_contrat_form_inherit
+msgid "<span>/ quincena</span>"
+msgstr "<span>/ quincena</span>"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.hr_contrat_form_inherit
+msgid "<span>/ semana</span>"
+msgstr "<span>/ semana</span>"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:37
+#, python-format
+msgid "ACCOUNTS RECEIVABLE"
+msgstr "CUENTAS POR COBRAR"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_deductions_amount
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_incomes_amount
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_incomes_amount_new
+msgid "Amount"
+msgstr "Importe"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_payment_amount
+msgid "Amount Payment"
+msgstr "Monto pagado"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.gn_liquidatios_form
+msgid "Approve"
+msgstr "Aprobar"
+
+#. module: l10n_hn_hr_payroll
+#: selection:l10n_hn_hr_payroll.liquidations,state:0
+msgid "Approved"
+msgstr "Aprobado"
+
+#. module: l10n_hn_hr_payroll
+#: selection:hr.payslip.line,month:0
+msgid "April"
+msgstr "Abril"
+
+#. module: l10n_hn_hr_payroll
+#: selection:hr.payslip.line,month:0
+msgid "August"
+msgstr "Agosto"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_daily_monthly_salary
+msgid "Average Daily Salary"
+msgstr "Sueldo Diario Promedio"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,help:l10n_hn_hr_payroll.field_isr_hr_payroll_amount_total
+msgid "Base exenta del ISR"
+msgstr "Base exenta del ISR"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_contract_biweekly_wage
+msgid "Biweekly Wage"
+msgstr "Salario quincenal"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:17
+#, python-format
+msgid "CESANTIA ASSISTANCE"
+msgstr "AUXILIO DE CESANTIA"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:40
+#, python-format
+msgid "COOPERATIVE"
+msgstr "COOPERATIVA"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_employee_cancellation_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_cancellation_date
+msgid "Cancellation Date"
+msgstr "Cancelación"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.gn_liquidatios_form
+msgid "Change to Draft"
+msgstr "Cambiar a Borrador"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_classification_id
+msgid "Classification"
+msgstr "Clasificación"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.actions.act_window,name:l10n_hn_hr_payroll.classification_deduction_contribution_action
+#: model:ir.ui.menu,name:l10n_hn_hr_payroll.classification_deduction_contribution_menu
+msgid "Classification of Deductions and Contributions"
+msgstr "Clasificación de Deducciones y Contribuciones"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.ihss_hr_payroll_form
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.isr_hr_payroll_form
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.rap_hr_payroll_form
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: l10n_hn_hr_payroll
+#: selection:ihss.hr.payroll,state:0
+#: selection:isr.hr.payroll,state:0
+#: selection:rap.hr.payroll,state:0
+msgid "Closed"
+msgstr "Cerrado"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_classification_deduction_contribution_code
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_employee_code_employee
+msgid "Codigo de empleado"
+msgstr "Codigo de empleado"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_employee_tags_color
+msgid "Color Index"
+msgstr "Índice de Colores"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_company_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_company_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll_company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_contract_id
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_contract_advantage_template_ids
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.hr_contrat_form_inherit
+msgid "Contract Advantage"
+msgstr "Ventajas del contrato"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_contract_type
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.view_liquidations_search
+msgid "Contract Type"
+msgstr "Tipo de contrato"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_contrib_deduct_ids
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.contribution_deduction_form
+msgid "Contracts"
+msgstr "Contratos"
+
+#. module: l10n_hn_hr_payroll
+#: selection:contribution.deduction,type:0
+msgid "Contribution"
+msgstr "Contribución"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.actions.act_window,name:l10n_hn_hr_payroll.contribution_deduction_action
+#: model:ir.ui.menu,name:l10n_hn_hr_payroll.contribution_deduction_menu
+msgid "Contributions and Deductions"
+msgstr "Contribuciones y Deducciones"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_contract_contrib_deduct_ids
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.hr_contrat_form_inherit
+msgid "Contributions and deductions"
+msgstr "Contribuciones y Deducciones"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.hr_employee_form_view_inh
+msgid "Create Code"
+msgstr "Crear Código"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.actions.act_window,help:l10n_hn_hr_payroll.action_liquidations
+msgid "Create Liquidations"
+msgstr "Crear Liquidaciones"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_classification_deduction_contribution_create_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_create_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_create_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_create_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_deductions_create_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_employee_tags_create_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_incomes_create_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_create_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_classification_deduction_contribution_create_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_create_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_create_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_create_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_deductions_create_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_employee_tags_create_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_incomes_create_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_create_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_currency_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.gn_liquidatios_form
+msgid "DEDUCTIONS"
+msgstr "DEDUCCIONES"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_daily_base_salary
+msgid "Daily Base Salary"
+msgstr "Sueldo Diario Base"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_daily_ordinary_salary
+msgid "Daily Ordinary Salary"
+msgstr "Sueldo Ordinario Diario"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_daily_salary
+msgid "Daily Salary"
+msgstr "Sueldo Diario"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_contract_daily_wage
+msgid "Daily Wage"
+msgstr "Salario diario"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_employee_date_of_admission
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_date_of_admission
+msgid "Date of Admission"
+msgstr "Fecha de Ingreso"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.hr_employee_form_view_inh
+msgid "Dates"
+msgstr "Fechas"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_resource_calendar_days_worked_month
+msgid "Days worked per month"
+msgstr "Días trabajados por mes"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:63
+#: selection:l10n_hn_hr_payroll.liquidations,reason:0
+#, python-format
+msgid "Death Outside Working Hours"
+msgstr "Muerte en Horas no Laborales"
+
+#. module: l10n_hn_hr_payroll
+#: selection:hr.payslip.line,month:0
+msgid "December"
+msgstr "Diciembre"
+
+#. module: l10n_hn_hr_payroll
+#: selection:contribution.deduction,type:0
+msgid "Deduction"
+msgstr "Deducción"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_deduction_ids
+msgid "Deductions"
+msgstr "Deducciones"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_department_id
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.view_liquidations_search
+msgid "Department"
+msgstr "Departamento"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_deductions_name
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_incomes_name
+msgid "Description"
+msgstr "Descripción"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:63
+#: selection:l10n_hn_hr_payroll.liquidations,reason:0
+#, python-format
+msgid "Dismissal"
+msgstr "Despido"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_classification_deduction_contribution_display_name
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_display_name
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_display_name
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_display_name
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_deductions_display_name
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_employee_tags_display_name
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_incomes_display_name
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_display_name
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll_display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.hr_employee_form_view_inh
+msgid "Do you sure to create code employee??"
+msgstr "Esta seguro de crear código de empleado??"
+
+#. module: l10n_hn_hr_payroll
+#: selection:contribution.deduction,state:0
+msgid "Done"
+msgstr "Hecho"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:49
+#: selection:contribution.deduction,state:0
+#: selection:ihss.hr.payroll,state:0
+#: selection:isr.hr.payroll,state:0
+#: selection:l10n_hn_hr_payroll.liquidations,state:0
+#: selection:rap.hr.payroll,state:0
+#, python-format
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: l10n_hn_hr_payroll
+#: sql_constraint:hr.employee:0
+msgid "El código de empleado debe de ser único!"
+msgstr "El código de empleado debe de ser único!"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_hr_employee
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_employee_amount
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_employee_tags_employee_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_employee_id
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.gn_liquidatios_form
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.ihss_hr_payroll_form
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_employee_code
+msgid "Employee Code"
+msgstr "Código de Empleado"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contrato de empleado"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_employee_employee_tag_ids
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.hr_employee_form_view_inh
+msgid "Employee Tags"
+msgstr "Etiquetas del empleado"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_hr_contract_advantage_template
+msgid "Employee's Advantage on Contract"
+msgstr "Ventaja del empleado en el contrato"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_employment_benefits
+msgid "Employment Benefits"
+msgstr "Prestaciones Laborales"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_end_date
+msgid "End date"
+msgstr "Fecha final"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_contract_advantage_template_overtime
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.hr_contrat_form_inherit
+msgid "Extra hours"
+msgstr "Horas extras"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:23
+#, python-format
+msgid "FOURTH MONTH"
+msgstr "DECIMO CUARTO MES"
+
+#. module: l10n_hn_hr_payroll
+#: selection:hr.payslip.line,month:0
+msgid "February"
+msgstr "Febrero"
+
+#. module: l10n_hn_hr_payroll
+#: selection:contribution.deduction,periocity:0
+msgid "Finite"
+msgstr "Finita"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,help:l10n_hn_hr_payroll.field_resource_calendar_work_hours_day
+msgid "Fixed the hours of the work days of the working hours. If left blank it will be the time included in the work intervals per day."
+msgstr "Se corrigieron las horas de los días de trabajo de las horas de trabajo. Si se deja en blanco, será el tiempo incluido en los intervalos de trabajo por día."
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/hr_payslip.py:191
+#, python-format
+msgid "Global Anormal Condition"
+msgstr "Condición anormal global"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/hr_payslip.py:211
+#, python-format
+msgid "Global Anormal Condition Leaves"
+msgstr "Hojas de condición anormal global"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:19
+#, python-format
+msgid "HOLIDAYS CAUSED"
+msgstr "VACACIONES CAUSADAS"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:29
+#, python-format
+msgid "HOURS EXTRA"
+msgstr "HORAS EXTRAS"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:38
+#, python-format
+msgid "HSJ LOAN"
+msgstr "PRESTAMO HSJ"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_res_company
+msgid "Hospital"
+msgstr "Hospital"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_contract_hourly_wage
+msgid "Hourly Wage"
+msgstr "Salario"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_classification_deduction_contribution_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_deductions_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_employee_tags_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_incomes_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll_id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.actions.act_window,name:l10n_hn_hr_payroll.ihss_hr_payroll_action
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_res_company_ihss
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_res_company_ihss_techo
+#: model:ir.ui.menu,name:l10n_hn_hr_payroll.ihss_hr_payroll_menu
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.hr_contrat_form_inherit
+msgid "IHSS"
+msgstr "IHSS"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.gn_liquidatios_form
+msgid "INCOMES"
+msgstr "INGRESOS"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.actions.act_window,name:l10n_hn_hr_payroll.isr_hr_payroll_action
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_res_company_isr
+#: model:ir.ui.menu,name:l10n_hn_hr_payroll.isr_hr_payroll_menu
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.hr_contrat_form_inherit
+msgid "ISR"
+msgstr "ISR"
+
+#. module: l10n_hn_hr_payroll
+#: selection:contribution.deduction,state:0
+msgid "In progress"
+msgstr "En progreso"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_income_ids
+msgid "Incomes"
+msgstr "Ingresos"
+
+#. module: l10n_hn_hr_payroll
+#: selection:contribution.deduction,periocity:0
+msgid "Infinite"
+msgstr "Infinita"
+
+#. module: l10n_hn_hr_payroll
+#: selection:hr.payslip.line,month:0
+msgid "January"
+msgstr "Enero"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_job_id
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.view_liquidations_search
+msgid "Job"
+msgstr "Trabaja"
+
+#. module: l10n_hn_hr_payroll
+#: selection:hr.payslip.line,month:0
+msgid "Jule"
+msgstr "Julio"
+
+#. module: l10n_hn_hr_payroll
+#: selection:hr.payslip.line,month:0
+msgid "June"
+msgstr "Junio"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_classification_deduction_contribution___last_update
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction___last_update
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll___last_update
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll___last_update
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_deductions___last_update
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_employee_tags___last_update
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_incomes___last_update
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations___last_update
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_classification_deduction_contribution_write_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_write_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_write_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_write_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_deductions_write_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_employee_tags_write_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_incomes_write_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_write_uid
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_classification_deduction_contribution_write_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_write_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_write_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_write_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_deductions_write_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_employee_tags_write_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_incomes_write_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_write_date
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll_write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,help:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_contract_id
+msgid "Latest contract of the employee"
+msgstr "Último contrato del empleado"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.gn_liquidatios_form
+msgid "Liquidate"
+msgstr "Liquidar"
+
+#. module: l10n_hn_hr_payroll
+#: selection:l10n_hn_hr_payroll.liquidations,state:0
+msgid "Liquidated"
+msgstr "Liquidado"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_deductions_liquidation_id
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_incomes_liquidation_id
+msgid "Liquidation"
+msgstr "Liquidación"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.actions.act_window,name:l10n_hn_hr_payroll.action_liquidations
+#: model:ir.ui.menu,name:l10n_hn_hr_payroll.liquidations_menuitem
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.gn_liquidations_tree
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.gn_liquidatios_form
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.view_liquidations_search
+msgid "Liquidations"
+msgstr "Liquidaciones"
+
+#. module: l10n_hn_hr_payroll
+#: selection:hr.payslip.line,month:0
+msgid "March"
+msgstr "Marzo"
+
+#. module: l10n_hn_hr_payroll
+#: selection:hr.payslip.line,month:0
+msgid "May"
+msgstr "Mayo"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payslip_line_month
+msgid "Month of Year"
+msgstr "Mes del año"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_monthly_base_salary
+msgid "Monthly Base Salary"
+msgstr "Sueldo Base Mensual"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_monthly_ordinary_salary
+msgid "Monthly Ordinary Salary"
+msgstr "Sueldo Ordinario Mensual"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.hr_contrat_form_inherit
+msgid "Monto"
+msgstr "Monto"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:16
+#, python-format
+msgid "NOTICE"
+msgstr "PREAVISO"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_classification_deduction_contribution_name
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_name
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_name
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_employee_tags_name
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.ihss_hr_payroll_form
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:63
+#: selection:l10n_hn_hr_payroll.liquidations,reason:0
+#, python-format
+msgid "Natural Death"
+msgstr "Muerte Natural"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.hr_contrat_form_inherit
+msgid "Net Salary"
+msgstr "Salario neto"
+
+#. module: l10n_hn_hr_payroll
+#: selection:hr.payslip.line,month:0
+msgid "November"
+msgstr "Noviembre"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_name
+msgid "Number"
+msgstr "Número"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:41
+#, python-format
+msgid "OPTICA SANTA LUCIA"
+msgstr "OPTICA SANTA LUCIA"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:44
+#, python-format
+msgid "OTHER DEDUCTIONS"
+msgstr "OTHER DEDUCTIONS"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:30
+#, python-format
+msgid "OTHER INCOMES"
+msgstr "OTROS INGRESOS"
+
+#. module: l10n_hn_hr_payroll
+#: selection:hr.payslip.line,month:0
+msgid "October"
+msgstr "Octubre"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/isr_hr_payroll.py:49
+#, python-format
+msgid "Only isr configuration can be open."
+msgstr "Ya existe una configuración de ISR abierta."
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/rap_hr_payroll.py:50
+#, python-format
+msgid "Only rap configuration can be open."
+msgstr "Ya existe una configuración de RAP abierta."
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.ihss_hr_payroll_form
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.isr_hr_payroll_form
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.rap_hr_payroll_form
+msgid "Open"
+msgstr "Abierto"
+
+#. module: l10n_hn_hr_payroll
+#: selection:ihss.hr.payroll,state:0
+#: selection:isr.hr.payroll,state:0
+#: selection:rap.hr.payroll,state:0
+msgid "Opened"
+msgstr "Abierto"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.hr_contrat_form_inherit
+msgid "Ordinary Salary"
+msgstr "Salario ordinario"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:26
+#, python-format
+msgid "PAYMENT DAY WORK PENDING"
+msgstr "PAGO DE DIAS TRABAJADOS PENDIENTES"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:28
+#, python-format
+msgid "PAYMENTS BREASTFEEDING HOURS"
+msgstr "PAGO DE HORAS DE LACTANCIA"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:20
+#, python-format
+msgid "PROPORTIONAL HOLIDAYS"
+msgstr "VACACIONES PROPORCIONALES"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:18
+#, python-format
+msgid "PROPORTIONAL KIDNEY ASSISTANCE"
+msgstr "AUXILIO DE CESANTIA PROPORCIONAL"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:25
+#, python-format
+msgid "PROPORTIONAL VACATION BONUS"
+msgstr "BONO DE VACACIONES PROPORCIONAL"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_partner_amount
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.ihss_hr_payroll_form
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_hr_payslip
+msgid "Pay Slip"
+msgstr "Nómina"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_payslip_line_report_date
+msgid "Pay date"
+msgstr "Fecha de pago"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_hr_payslip_line
+msgid "Payslip Line"
+msgstr "Línea de nómina"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll_percent
+msgid "Percent"
+msgstr "%"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_periocity
+msgid "Periocity"
+msgstr "Periocidad"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_quota_amount
+msgid "Quota Amount"
+msgstr "Cuota a pagar"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.actions.act_window,name:l10n_hn_hr_payroll.rap_hr_payroll_action
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_res_company_rap
+#: model:ir.ui.menu,name:l10n_hn_hr_payroll.rap_hr_payroll_menu
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.hr_contrat_form_inherit
+msgid "RAP"
+msgstr "RAP"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:39
+#, python-format
+msgid "RAP LOAN INSTALLMENT JUNE 2018"
+msgstr "CUOTA PRESTAMO RAP JUNIO 2018"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:43
+#, python-format
+msgid "REAJUSTE RESERVA LABORAL (LO AHORRADO EN EL RAP)"
+msgstr "REAJUSTE RESERVA LABORAL (LO AHORRADO EN EL RAP)"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/hr_employee_inh.py:30
+#, python-format
+msgid "RTN size must be equal to 14 characters"
+msgstr "El tamaño RTN debe ser igual a 14 caracteres"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_reason
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.view_liquidations_search
+msgid "Reason"
+msgstr "Motivo"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_register_id
+msgid "Register"
+msgstr "Registro"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_remaining_payment_amount
+msgid "Remaining Amount Payment"
+msgstr "Cantidad de pagos restantes"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:63
+#: selection:l10n_hn_hr_payroll.liquidations,reason:0
+#, python-format
+msgid "Resignation"
+msgstr "Renuncia"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_contract_advantage_template_resource_calendar_id
+msgid "Resource calendar"
+msgstr "Horario de trabajo"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_roof
+msgid "Roof"
+msgstr "Techo"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_contract_salary_eh_ids
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_contract_salary_gross_ids
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_contract_salary_ihss_ids
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_contract_salary_isr_ids
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_contract_salary_net_ids
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_contract_salary_rap_ids
+msgid "Rules"
+msgstr "Reglas"
+
+#. module: l10n_hn_hr_payroll
+#: selection:ihss.hr.payroll,name:0
+msgid "Régimen de Atención en Salud"
+msgstr "Régimen de Atención en Salud"
+
+#. module: l10n_hn_hr_payroll
+#: selection:ihss.hr.payroll,name:0
+msgid "Régimen de Previsión Social"
+msgstr "Régimen de Previsión Social"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.gn_liquidatios_form
+msgid "Send to Approbation"
+msgstr "Enviar a Aprobación"
+
+#. module: l10n_hn_hr_payroll
+#: selection:hr.payslip.line,month:0
+msgid "September"
+msgstr "Septiembre"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_deductions_number
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_incomes_number
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,help:l10n_hn_hr_payroll.field_resource_calendar_days_worked_month
+msgid "Set the work days of the month."
+msgstr "Establece los días de trabajo del mes."
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_show_in_contract
+msgid "Show in contract"
+msgstr "Mostrar en contrato"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_start_date
+msgid "Start date"
+msgstr "Fecha de inicio"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_state
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_state
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_state
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_state
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll_state
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.view_liquidations_search
+msgid "State"
+msgstr "Estado"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:24
+#, python-format
+msgid "TENTH FOURTH MONTH PROPORTIONAL"
+msgstr "DECIMO CUARTO MES PROPORCIONAL"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:21
+#, python-format
+msgid "THIRTEEN MONTH"
+msgstr "DECIMO TERCER MES"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:22
+#, python-format
+msgid "THIRTEENTH PROPORTIONAL MONTH"
+msgstr "DECIMO TERCER MES PROPORCIONAL"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.gn_liquidatios_form
+msgid "TOTAL"
+msgstr "TOTAL"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/hr_payroll_historic.py:44
+#, python-format
+msgid "The date from can not be major that date_to."
+msgstr "La fecha de inicio del período no puede ser mayor que la fecha de fin."
+
+#. module: l10n_hn_hr_payroll
+#: sql_constraint:isr.hr.payroll:0
+#: sql_constraint:rap.hr.payroll:0
+msgid "The year must be unique"
+msgstr "El año debe ser único."
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_incomes_time
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_incomes_time_new
+msgid "Time"
+msgstr "Tiempo"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_amount_total
+msgid "Total"
+msgstr "Total"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_total_amount
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_amount_total
+msgid "Total Amount"
+msgstr "Importe total"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_total_deductions
+msgid "Total Deductions"
+msgstr "Total Deducciones"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_total_incomes
+msgid "Total Incomes"
+msgstr "Total Ingresos"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_total_to_pay
+msgid "Total to Pay"
+msgstr "Total a Pagar"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.ihss_hr_payroll_form
+msgid "Totals"
+msgstr "Totales"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_contribution_deduction_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:42
+#, python-format
+msgid "VACATIONS TAKAN IN ADVANCE"
+msgstr "VACACIONES TOMADAS ANTICIPADAMENTE"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_incomes_value
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_incomes_value_new
+msgid "Value"
+msgstr "Valor"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_hn_hr_payroll.view_company_form_inherit
+msgid "Values"
+msgstr "Valores"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:27
+#, python-format
+msgid "WORK RESERVATION"
+msgstr "RESERVA LABORAL"
+
+#. module: l10n_hn_hr_payroll
+#: code:addons/l10n_hn_hr_payroll/models/liquidations.py:49
+#: selection:l10n_hn_hr_payroll.liquidations,state:0
+#, python-format
+msgid "Waiting for Approval"
+msgstr "A la espera de la aprobación"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_contract_weekly_wage
+msgid "Weekly Wage"
+msgstr "Salario semanal"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_hr_employee_with_code
+msgid "With Code"
+msgstr "Con Código"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_work_time
+msgid "Work Time"
+msgstr "Tiempo de trabajo"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_resource_calendar_work_hours_day
+msgid "Work hours day"
+msgstr "Horas de trabajo al día"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_incomes_worked_days
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_worked_days
+msgid "Worked Days"
+msgstr "Dias Trabajados"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_incomes_worked_months
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_worked_months
+msgid "Worked Months"
+msgstr "Meses Trabajados"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_incomes_worked_years
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_l10n_hn_hr_payroll_liquidations_worked_years
+msgid "Worked Years"
+msgstr "Años Trabajados"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_resource_calendar
+msgid "Working Schedule"
+msgstr "Horario de trabajo"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_ihss_hr_payroll_year
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_isr_hr_payroll_year
+#: model:ir.model.fields,field_description:l10n_hn_hr_payroll.field_rap_hr_payroll_year
+msgid "Year"
+msgstr "Año"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_classification_deduction_contribution
+msgid "classification.deduction.contribution"
+msgstr "classification.deduction.contribution"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_contribution_deduction
+msgid "contribution.deduction"
+msgstr "contribution.deduction"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_ihss_hr_payroll
+msgid "ihss.hr.payroll"
+msgstr "ihss.hr.payroll"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_isr_hr_payroll
+msgid "isr.hr.payroll"
+msgstr "isr.hr.payroll"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_l10n_hn_hr_payroll_deductions
+msgid "l10n_hn_hr_payroll.deductions"
+msgstr "l10n_hn_hr_payroll.deductions"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_l10n_hn_hr_payroll_employee_tags
+msgid "l10n_hn_hr_payroll.employee_tags"
+msgstr "l10n_hn_hr_payroll.employee_tags"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_l10n_hn_hr_payroll_incomes
+msgid "l10n_hn_hr_payroll.incomes"
+msgstr "l10n_hn_hr_payroll.incomes"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_l10n_hn_hr_payroll_liquidations
+msgid "l10n_hn_hr_payroll.liquidations"
+msgstr "l10n_hn_hr_payroll.liquidations"
+
+#. module: l10n_hn_hr_payroll
+#: model:ir.model,name:l10n_hn_hr_payroll.model_rap_hr_payroll
+msgid "rap.hr.payroll"
+msgstr "rap.hr.payroll"
+

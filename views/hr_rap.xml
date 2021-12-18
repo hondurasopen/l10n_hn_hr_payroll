@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<data>
+
+<record id="hr_rap_form_view" model="ir.ui.view">
+<field name="name">hr.rap.form.view</field>
+<field name="model">hr.rap</field>         	      	
+<field name="arch" type="xml">
+<form string="RAP">
+<header>
+	<button name="set_rap" type="object" string="Establecer IHSS" class="oe_highlight" states="draft"/>
+    <button name="set_to_draft" type="object" string="Establecer Borrador" class="oe_highlight" states="validated"/>
+	<field name="state" widget="statusbar" nolabel="1"/>
+</header>
+<sheet>
+	<h1>
+		<field name="name" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+	</h1>
+	<group colspan="4">
+		<group cols="2">
+            <field name="techo_rap_max" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+            <field name="techo_rap_min" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+		</group>			
+		<group cols="2">
+            <field name="rap_percentage" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+             <field name="pay_periodicity" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+		</group>        			
+    </group>
+    <notebook>
+    <page string="Cuota de RAP">
+	    <group>
+	    	<group>
+	    		<field name="fee_pay_max_rap" readonly="1"/>
+	    		
+	    	</group>
+	    	<group>
+	    		<field name="pay_periodicity" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+	    		<field name="rap_fee_max" readonly="1"/>
+	    	</group>
+	    </group>
+	</page>
+    </notebook>
+</sheet>
+</form>
+</field>
+</record>
+
+<record id="hr_rap_tree_view" model="ir.ui.view">
+<field name="name">hr.rap.tree.view</field>
+<field name="model">hr.rap</field>         	      	
+<field name="arch" type="xml">
+	<tree string="Detalle RAP">
+		<field name="name"/>
+        <field name="techo_rap_max"/>
+        <field name="techo_rap_min"/>
+        <field name="rap_percentage"/>        				
+	</tree>	
+</field>
+</record>
+        
+<record model="ir.actions.act_window" id="action_hr_rap">
+<field name="name">RAP Parámetros</field>
+<field name="res_model">hr.rap</field>
+<field name="view_type">form</field>
+<field name="view_model">tree,form</field>
+<field name="help" type="html">
+    <p class="oe_view_nocontent_create">Crear Deduccion del RAP</p>
+</field>
+</record>
+  
+<menuitem string="RAP" id="hr_menu_rap_settings" parent="hr_payroll.menu_hr_payroll_configuration" action="action_hr_rap" sequence="51"/>
+           
+	</data>
+</odoo>
