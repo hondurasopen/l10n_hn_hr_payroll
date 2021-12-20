@@ -39,7 +39,6 @@
     <record model="ir.actions.act_window" id="action_hr_hn_contract_concepts_deductions">
     <field name="name">Beneficios y deducciones</field>
     <field name="res_model">hr.contract.concepts.deductions</field>
-    <field name="view_type">form</field>
     <field name="view_mode">tree,form</field>
     <field name="help" type="html">
         <p class="oe_view_nocontent_create">Crear primer registro</p>

@@ -5,11 +5,10 @@ class HrISRSettings(models.Model):
 	_name = "hr.isr"
 
 
-	@api.multi
 	def set_isr(self):
 		self.write({'state': 'validated'})
 
-	@api.multi
+
 	def set_to_draft(self):
 		self.write({'state': 'draft'})
 

@@ -16,7 +16,6 @@ class HrIsrEmployee(models.Model):
     end_date = fields.Date("Fecha Final")
     pay_number = fields.Integer("# Pagos")
 
-    @api.multi
     def set_isr_contract(self):
         if self.employee_ids:
             for contract in self.employee_ids:
@@ -32,11 +31,11 @@ class HrIsrEmployee(models.Model):
 
             self.write({'state': 'validated'})
 
-    @api.multi
+
     def return_to_draft(self):
         self.write({'state': 'draft'})        
 
-    @api.multi
+
     def calculate_isr(self):
         if self.employee_ids:
             if self.pay_number > 0:
@@ -61,7 +60,7 @@ class HrIsrEmployee(models.Model):
             else:
                 raise Warning(_('El número de pagos debe de ser mayor que cero'))
 
-    @api.multi
+
     def get_employees(self):
     	self.employee_ids.unlink()
     	date_1 = datetime.strptime(self.start_date, '%Y-%m-%d')
@@ -100,7 +99,7 @@ class HrIsrEmployee(models.Model):
 class HrIsrEmployeeDetail(models.Model):
     _name = "hr.isr.employee.detail"
 
-    @api.one
+
     @api.depends("total_incomes", "amount_membership", "medical_expense", "amount_rap", "amount_ivm", "other_expenses")
     def _compute_total_base(self):
     	self.total_base = self.total_incomes - self.amount_membership - self.medical_expense - self.amount_rap - self.amount_ivm - self.other_expenses

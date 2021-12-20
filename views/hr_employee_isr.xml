@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-<data>
 
 <record id="hr_isr_employee_form_view" model="ir.ui.view">
 <field name="name">hr.isr.employee.form.view</field>
@@ -45,7 +44,7 @@
     <notebook>
     <page string="Empleados">
 		<field name="employee_ids" attrs="{'readonly': [('state','!=', 'draft')]}">
-			<tree editable="button" decoration-success="is_ok == True" decoration-info="is_ok == False">
+			<tree editable="button" >
 				<field name="employee_id" options="{'no_create': True}"/>
 				<field name="total_incomes"/>
 				<field name="medical_expense"/>
@@ -77,21 +76,19 @@
 </field>
 </record>
         
-<record model="ir.actions.act_window" id="action_hr_isr_employee">
-<field name="name">Aplicar Impuestro Sobre Renta</field>
+
+<record model="ir.actions.act_window" id="action_hr_employee_isr">
+<field name="name">Empleados ISR</field>
 <field name="res_model">hr.isr.employee</field>
-<field name="view_type">form</field>
-<field name="view_model">tree,form</field>
+<field name="view_mode">tree,form</field>
 <field name="help" type="html">
-    <p class="oe_view_nocontent_create">Establecer ISR</p>
+	<p class="oe_view_nocontent_create">Crear un nuevo registro</p>
 </field>
 </record>
-  
-<menuitem string="Impuesto Sobre Renta" name="Deducción Marco Legal" id="menu_hr_isr_employee_settings" parent="hr_payroll.menu_hr_payroll_root" 
-	 sequence="55"/>
 
-<menuitem string="Establecer ISR" id="menu_hr_isr_employee_action" parent="menu_hr_isr_employee_settings" 
-	action="action_hr_isr_employee" sequence="10"/>
+<menuitem id="id_menu_isr_action_empleado" 
+		name="Empleados ISR" 
+		sequence="40" 
+		parent="id_menu_payroll_sie_root" action="action_hr_employee_isr"/>
            
-</data>
 </odoo>

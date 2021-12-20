@@ -9,13 +9,13 @@ class HrContract(models.Model):
     _inherit = "hr.contract"
 
     # COLUMNS
-    historical_ids = fields.One2many("hr.historical.contract", "contract_id", "Historial")
-    allowences_ids = fields.One2many("hr.contract.deduction.allowance", "contract_id", "Otros Beneficios y deducciones")
-    historical_gross_wage_ids = fields.One2many("hr.gross.wage.historical", "contract_id", "Salarios Brutos")
+    #historical_ids = fields.One2many("hr.historical.contract", "contract_id", "Historial")
+    #allowences_ids = fields.One2many("hr.contract.deduction.allowance", "contract_id", "Otros Beneficios y deducciones")
+    #historical_gross_wage_ids = fields.One2many("hr.gross.wage.historical", "contract_id", "Salarios Brutos")
 
     #Settings IHSS
     ihss_fee = fields.Float("Cuota de seguro")
-    accumulated_amount_ihss = fields.Float("Monto acumulado Ihss")
+    #accumulated_amount_ihss = fields.Float("Monto acumulado Ihss")
     ihss_id = fields.Many2one("hr.ihss.settings", "Deducción IHSS")
     ihss_manual = fields.Boolean("IHSS manual")
     amount_ihss_manual = fields.Float("Monto IHSS Manual")

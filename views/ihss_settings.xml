@@ -64,8 +64,7 @@
 <record model="ir.actions.act_window" id="action_hr_ihss_settings">
     <field name="name">IHSS Parámetros</field>
     <field name="res_model">hr.ihss.settings</field>
-    <field name="view_type">form</field>
-    <field name="view_model">tree,form</field>
+    <field name="view_mode">tree,form</field>
     <field name="help" type="html">
         <p class="oe_view_nocontent_create">Parámetros IHSS</p>
     </field>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+    <record model="ir.module.category" id="categoria_hn_payroll_setting_mgm">
+        <field name="name">Configuración de RRHH</field>
+        <field name="description">Configuración de RRHH</field>
+        <field name="sequence">4</field>
+	</record>
+
+
+    <record id="grupo_mgm_isr" model="res.groups">
+    <field name="category_id" ref="categoria_hn_payroll_setting_mgm"/>
+    <field name="name">Acceso ISR Administrador</field>
+    </record>
+
+    <record id="grupo_user_isr" model="res.groups">
+    <field name="category_id" ref="categoria_hn_payroll_setting_mgm"/>
+    <field name="name">Acceso ISR Lectura</field>
+    </record>
+
+    
+</data>
+</odoo>

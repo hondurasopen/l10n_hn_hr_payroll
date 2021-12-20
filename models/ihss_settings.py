@@ -4,7 +4,6 @@ from odoo import api, fields, models, tools, _
 class HrIhssSettings(models.Model):
 	_name = "hr.ihss.settings"
 
-	@api.multi
 	def set_ihss(self):
 		self.fee_pay_max_ihss = (self.limit_max_ihss * self.ihss_percentage /100) 
 		self.fee_pay_min_ihss = (self.limit_min_ihss * self.ihss_percentage /100)
@@ -20,7 +19,6 @@ class HrIhssSettings(models.Model):
 		self.write({'state': 'validated'})
 
 
-	@api.multi
 	def set_to_draft(self):
 		self.write({'state': 'draft'})
 

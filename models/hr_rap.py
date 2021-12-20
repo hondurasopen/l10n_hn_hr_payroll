@@ -6,7 +6,6 @@ class HrRap(models.Model):
 	_name = "hr.rap"
 
 
-	@api.multi
 	def set_rap(self):
 		self.fee_pay_max_rap = (self.techo_rap_max - self.techo_rap_min) * (self.rap_percentage / 100)
 		if self.pay_periodicity == 'weekly':	
@@ -17,7 +16,7 @@ class HrRap(models.Model):
 			self.rap_fee_max = self.fee_pay_max_rap  
 		self.write({'state': 'validated'})
 
-	@api.multi
+
 	def set_to_draft(self):
 		self.write({'state': 'draft'})
 
