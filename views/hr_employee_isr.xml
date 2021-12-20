@@ -9,7 +9,7 @@
 <header>
 	<button name="get_employees" type="object" string="Obtener Empleados" class="oe_highlight" states="draft"/>
     <button name="calculate_isr" type="object" string="Calcular ISR" class="oe_highlight" states="draft"/>
-    <button name="set_isr_contract" type="object" string="Establecer ISR" class="oe_highlight" states="draft"/>
+    <button name="set_isr_contract" type="object" string="Aplicar ISR" class="oe_highlight" states="draft"/>
     <button name="return_to_draft" type="object" string="Volver a Borrador" class="oe_highlight" states="validated"/>
 	<field name="state" widget="statusbar" nolabel="1"/>
 </header>

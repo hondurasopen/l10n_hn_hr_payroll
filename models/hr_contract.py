@@ -11,7 +11,6 @@ class HrContract(models.Model):
     # COLUMNS
     #historical_ids = fields.One2many("hr.historical.contract", "contract_id", "Historial")
     #allowences_ids = fields.One2many("hr.contract.deduction.allowance", "contract_id", "Otros Beneficios y deducciones")
-    #historical_gross_wage_ids = fields.One2many("hr.gross.wage.historical", "contract_id", "Salarios Brutos")
 
     #Settings IHSS
     ihss_fee = fields.Float("Cuota de seguro")
@@ -29,7 +28,7 @@ class HrContract(models.Model):
     isr_fee = fields.Float("Cuota ISR")
     isr_id = fields.Many2one("hr.isr", "Deducción ISR")
     isr_ids = fields.One2many("hr.isr.employee.detail", "contract_id", "ISR")
-    isr_residual = fields.Float("ISR por pagar")
+    isr_residual = fields.Float("ISR por pagar Presente Ejercicio")
     amount_membership = fields.Float("Monto de Colegiaturas")
     other_expenses_isr = fields.Float("Otros Gastos")
 

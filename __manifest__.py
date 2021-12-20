@@ -4,7 +4,7 @@
     'category': 'HR',
     "author": "César Alejandro Rodriguez, Grupo SIE",
     'version': '2.0',
-    'depends': ['base','hr','hr_payroll'],
+    'depends': ['base','hr','hr_payroll', 'hr_contract'],
     'data': [
         # Views
         "security/groups.xml",
@@ -13,7 +13,7 @@
         #"views/concept_deduction_allowances.xml",
         #'data/sequence.xml',
         #'data/data.xml',
-        #'views/hr_contract.xml',
+        'views/hr_contract.xml',
         #'views/hr_employee_view.xml',
         #"views/ihss_settings.xml",
         #"views/hr_rap.xml",

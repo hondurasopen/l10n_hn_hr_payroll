@@ -17,6 +17,14 @@ class HrIsrEmployee(models.Model):
     end_date = fields.Date("Fecha Final")
     pay_number = fields.Integer("# Pagos", default=24)
 
+
+    def unlink(self):
+        for isr in self:
+            if isr.state == 'validated':
+                raise UserError(_('El registro se encuentra en estado validado, no se puede eliminar'))
+        return super(HrIsrEmployee, self).unlink()
+
+
     def set_isr_contract(self):
         if self.employee_ids:
             for contract in self.employee_ids:
