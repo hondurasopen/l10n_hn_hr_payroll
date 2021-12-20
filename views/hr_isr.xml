@@ -8,7 +8,7 @@
 <form string="RAP">
 <header>
 	<button name="set_isr" type="object" string="Establecer ISR" class="oe_highlight" states="draft"/>
-    <button name="set_to_draft" type="object" string="Establecer Borrador" class="oe_highlight" states="validated"/>
+    <button name="set_to_draft" type="object" string="Volver a Borrador" class="oe_highlight" states="validated"/>
 	<field name="state" widget="statusbar" nolabel="1"/>
 </header>
 <sheet>
@@ -55,7 +55,7 @@
         
 
 <record model="ir.actions.act_window" id="action_hr_isr">
-<field name="name">Impuesto sobre renta</field>
+<field name="name">Tabla Progresiva ISR</field>
 <field name="res_model">hr.isr</field>
 <field name="view_mode">tree,form</field>
 <field name="help" type="html">
@@ -69,7 +69,7 @@
 		parent="hr_payroll.menu_hr_payroll_global_settings"/>
 
 <menuitem id="id_menu_isr_action" 
-		name="Impuesto sobre renta" 
+		name="Tabla Progresiva ISR" 
 		sequence="10" 
 		parent="id_menu_payroll_sie_root" action="action_hr_isr"/>
 

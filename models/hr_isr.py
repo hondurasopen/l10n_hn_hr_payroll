@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from odoo import api, fields, models, tools, _
+from odoo.exceptions import UserError
 
 class HrISRSettings(models.Model):
 	_name = "hr.isr"
@@ -24,6 +25,13 @@ class HrISRSettings(models.Model):
 	amount_ivm = fields.Float("Aportaciones Vejez y Muerte")
 
 	isr_range_ids = fields.One2many("hr.isr.ranges", "parent_id", "Rangos")
+
+
+	def unlink(self):
+		for isr in self:
+			if isr.state == 'validated':
+				raise UserError(_('El registro se encuentra en estado validado, no se puede eliminar'))
+		return super(HrISRSettings, self).unlink()
 
 
 class HrISRSettings(models.Model):

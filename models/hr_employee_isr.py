@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from odoo import api, fields, models, tools, _
 from datetime import datetime, timedelta
+from odoo.exceptions import ValidationError, UserError
 
 class HrIsrEmployee(models.Model):
     _name = "hr.isr.employee"
@@ -14,7 +15,7 @@ class HrIsrEmployee(models.Model):
     pay_periodicity = fields.Selection([('bi-weekly', 'Quincenal'), ('monthly', 'Mensual')], "Periodicidad Pago", default='bi-weekly')
     start_date = fields.Date("Fecha Inicio")
     end_date = fields.Date("Fecha Final")
-    pay_number = fields.Integer("# Pagos")
+    pay_number = fields.Integer("# Pagos", default=24)
 
     def set_isr_contract(self):
         if self.employee_ids:
@@ -58,15 +59,17 @@ class HrIsrEmployee(models.Model):
                     else:
                         employee.is_ok = False
             else:
-                raise Warning(_('El número de pagos debe de ser mayor que cero'))
+                raise ValidationError(_('El número de pagos debe de ser mayor que cero'))
 
 
     def get_employees(self):
-    	self.employee_ids.unlink()
-    	date_1 = datetime.strptime(self.start_date, '%Y-%m-%d')
-    	date_2 = datetime.strptime(self.end_date, '%Y-%m-%d')
-    	rest = date_2.month - date_1.month + 1
-    	if self.department_id:
+        self.employee_ids.unlink()
+        if not self.start_date or not self.end_date:
+            raise ValidationError(_('Los campos fechas de inicio y fecha final no deben ser vacios'))
+        date_1 = datetime.strptime(str(self.start_date), '%Y-%m-%d')
+        date_2 = datetime.strptime(str(self.end_date), '%Y-%m-%d')
+        rest = date_2.month - date_1.month + 1
+        if self.department_id:
             contract_obj = self.env["hr.contract"].search([('state', '=', 'open'), ('wage', '>', self.isr_id.exempt_salary), ('department_id', '=', self.department_id)])
             for l in contract_obj:
                 line_obj = self.env["hr.isr.employee.detail"]
@@ -78,9 +81,9 @@ class HrIsrEmployee(models.Model):
     				'total_incomes': l.wage * rest,
     				'amount_rap': self.isr_id.amount_rap,
     				'amount_ivm': self.isr_id.amount_ivm,
-    			}
+                }
                 line_obj.create(vals)
-    	else:
+        else:
             contract_obj = self.env["hr.contract"].search([('state', '=', 'open'), ('wage', '>', self.isr_id.exempt_salary)])
             for l in contract_obj:
                 line_obj = self.env["hr.isr.employee.detail"]
