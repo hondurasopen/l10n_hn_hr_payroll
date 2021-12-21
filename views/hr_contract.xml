@@ -38,6 +38,18 @@
             </tree>
         </field>
     </page>
+    <page string="IHSS y RAP">
+    <group>
+        <group>
+            <field name="ihss_id"/>
+            <field name="ihss_fee"/>
+        </group>
+        <group>
+            <field name="ihss_manual"/>
+            <field name="amount_ihss_manual" attrs="{'invisible': [('ihss_manual','=', False)]}"/>
+        </group>
+    </group>
+    </page>
     </notebook>
     </field>
     </record>

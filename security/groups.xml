@@ -18,6 +18,16 @@
     <field name="name">Acceso ISR Lectura</field>
     </record>
 
+    <record id="grupo_mgm_ihss" model="res.groups">
+    <field name="category_id" ref="categoria_hn_payroll_setting_mgm"/>
+    <field name="name">Acceso IHSS Administrador</field>
+    </record>
+
+    <record id="grupo_user_ihss" model="res.groups">
+    <field name="category_id" ref="categoria_hn_payroll_setting_mgm"/>
+    <field name="name">Acceso IHSS Lectura</field>
+    </record>
+
     
 </data>
 </odoo>

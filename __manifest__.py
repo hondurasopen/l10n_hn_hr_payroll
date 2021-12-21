@@ -15,11 +15,11 @@
         #'data/data.xml',
         'views/hr_contract.xml',
         #'views/hr_employee_view.xml',
-        #"views/ihss_settings.xml",
         #"views/hr_rap.xml",
         #"views/hr_salary_rule.xml",
         "views/hr_isr.xml",
         "views/hr_employee_isr.xml",
+        "views/ihss_settings.xml",
     ],
 
     'installable': True,

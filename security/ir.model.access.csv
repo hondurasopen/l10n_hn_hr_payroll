@@ -7,3 +7,5 @@ access_hr_isr_employee_mgm,hr.isr.employee,model_hr_isr_employee,grupo_mgm_isr,1
 access_hr_isr_employee_user,hr.isr.employee,model_hr_isr_employee,grupo_user_isr,1,0,0,0
 access_hr_isr_employee_detail_mgm,hr.isr.employee.detail,model_hr_isr_employee_detail,grupo_mgm_isr,1,1,1,1
 access_hr_isr_employee_detail_user,hr.isr.employee.detail,model_hr_isr_employee_detail,grupo_user_isr,1,0,0,0
+access_hr_ihss_settings_mgm,hr.ihss.settings,model_hr_ihss_settings,grupo_mgm_ihss,1,1,1,1
+access_hr_ihss_settings_user,hr.ihss.settings,model_hr_ihss_settings,grupo_user_ihss,1,0,0,0

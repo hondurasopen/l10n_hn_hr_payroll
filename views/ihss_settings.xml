@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <odoo>
-	<data>
 
 <record id="hr_ihss_settings_form_view" model="ir.ui.view">
 <field name="name">hr.ihss.settings.form.view</field>
@@ -57,20 +55,19 @@
             <field name="name"/>
 			<field name="ihss_percentage"/>        				
 		</tree>
-	
 	</field>
 </record>
         
+
 <record model="ir.actions.act_window" id="action_hr_ihss_settings">
-    <field name="name">IHSS Parámetros</field>
-    <field name="res_model">hr.ihss.settings</field>
-    <field name="view_mode">tree,form</field>
-    <field name="help" type="html">
-        <p class="oe_view_nocontent_create">Parámetros IHSS</p>
-    </field>
+<field name="name">IHSS Parámetro</field>
+<field name="res_model">hr.ihss.settings</field>
+<field name="view_mode">tree,form</field>
+<field name="help" type="html">
+	<p class="oe_view_nocontent_create">Crear un nuevo registro</p>
+</field>
 </record>
           
-<menuitem string="IHSS" id="hr_menu_config_ihss" parent="hr_payroll.menu_hr_payroll_configuration" action="action_hr_ihss_settings" sequence="50"/>
-           
-	</data>
+<menuitem id="hr_menu_config_ihss" parent="id_menu_payroll_sie_root" action="action_hr_ihss_settings" sequence="50"/>
+
 </odoo>

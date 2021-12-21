@@ -14,8 +14,7 @@ class HrContract(models.Model):
 
     #Settings IHSS
     ihss_fee = fields.Float("Cuota de seguro")
-    #accumulated_amount_ihss = fields.Float("Monto acumulado Ihss")
-    ihss_id = fields.Many2one("hr.ihss.settings", "Deducción IHSS")
+    ihss_id = fields.Many2one("hr.ihss.settings", "Parámetro IHSS")
     ihss_manual = fields.Boolean("IHSS manual")
     amount_ihss_manual = fields.Float("Monto IHSS Manual")
     
