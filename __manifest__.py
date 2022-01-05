@@ -9,8 +9,8 @@
         # Views
         "security/groups.xml",
         "security/ir.model.access.csv",
-        #"views/allowance_deduction_view.xml",
-        #"views/concept_deduction_allowances.xml",
+        "views/allowance_deduction_view.xml",
+        "views/concept_deduction_allowances.xml",
         #'data/sequence.xml',
         #'data/data.xml',
         'views/hr_contract.xml',

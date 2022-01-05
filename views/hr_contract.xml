@@ -50,6 +50,9 @@
         </group>
     </group>
     </page>
+    <page string="Beneficios y Deducciones">
+        <field name="allowances_ids"/>
+    </page>
     </notebook>
     </field>
     </record>

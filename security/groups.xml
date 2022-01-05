@@ -28,6 +28,16 @@
     <field name="name">Acceso IHSS Lectura</field>
     </record>
 
+
+    <record id="grupo_compensacion_beneficios_conceptos_mgm" model="res.groups">
+    <field name="category_id" ref="categoria_hn_payroll_setting_mgm"/>
+    <field name="name">Compensación y Beneficios Admin</field>
+    </record>
+
+    <record id="grupo_compensacion_beneficios_conceptos_user" model="res.groups">
+    <field name="category_id" ref="categoria_hn_payroll_setting_mgm"/>
+    <field name="name">Compensación y Beneficios Lectura</field>
+    </record>
     
 </data>
 </odoo>

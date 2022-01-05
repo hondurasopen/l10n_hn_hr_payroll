@@ -8,9 +8,6 @@ from odoo.addons import decimal_precision as dp
 class HrContract(models.Model):
     _inherit = "hr.contract"
 
-    # COLUMNS
-    #historical_ids = fields.One2many("hr.historical.contract", "contract_id", "Historial")
-    #allowences_ids = fields.One2many("hr.contract.deduction.allowance", "contract_id", "Otros Beneficios y deducciones")
 
     #Settings IHSS
     ihss_fee = fields.Float("Cuota de seguro")
@@ -30,6 +27,9 @@ class HrContract(models.Model):
     isr_residual = fields.Float("ISR por pagar Presente Ejercicio")
     amount_membership = fields.Float("Monto de Colegiaturas")
     other_expenses_isr = fields.Float("Otros Gastos")
+
+    #One2many
+    allowances_ids = fields.One2many("hr.contract.deduction.allowance", "contract_id", "Compenaciones y Beneficios")
 
 
     @api.onchange("ihss_id")

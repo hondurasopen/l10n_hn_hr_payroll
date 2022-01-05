@@ -36,4 +36,4 @@ class ConceptoDeducciones(models.Model):
 	name = fields.Char("Nombre de concepto", required=True)
 	code = fields.Char("Código de concepto")
 	active = fields.Boolean("Activo", default=True)
-	concept_type = fields.Selection([('beneficio','Beneficio'),('deduccion','Deduccion')], "Tipo", default='deduccion')
+	concept_type = fields.Selection([('beneficio','Beneficio'),('deduccion','Deduccion')], "Tipo", default='deduccion', required=True)
