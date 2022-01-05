@@ -10,7 +10,7 @@
     <page string="Impuesto Sobre Renta">
          <group>
             <group>
-                <field name="isr_fee" force_save="1" readonly="1"/>
+                <field name="isr_fee" force_save="1" />
                 <field name="isr_residual" force_save="1" readonly="1"/>
             </group>
             <group>
